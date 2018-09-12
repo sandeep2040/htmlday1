@@ -1,0 +1,59 @@
+<html>
+<body>
+First number:<input type="text" id="num1">
+Second number:<input type="text" id="num2">
+<input type="button" onclick="add()" value="calculate">
+ <input type="button" onclick="sub()" value="sub">   
+   <input type="button" onclick="mul()" value="mul"> 
+    
+   <input type="button" onclick="div()" value="div"> 
+    
+    
+    
+    
+    
+    <p id="hello"> </p>
+    
+    
+</body>
+<script>
+function add() {
+var a=document.getElementById("num1").value;
+var b=document.getElementById("num2").value;
+    var c=Number(a) +Number(b);
+document.getElementById("hello").innerHTML =c;
+}
+    </script>
+    
+    <script>
+    function sub(){
+    
+    var a=document.getElementById("num1").value;
+var b=document.getElementById("num2").value;
+    var c=Number(a) -Number(b);
+document.getElementById("hello").innerHTML =c;
+    }
+        </script>
+    
+    <script>
+    function mul(){
+    
+    var a=document.getElementById("num1").value;
+var b=document.getElementById("num2").value;
+    var c=Number(a) *Number(b);
+document.getElementById("hello").innerHTML =c;
+    }
+        </script>
+    
+    <script>
+    function div(){
+    
+    var a=document.getElementById("num1").value;
+var b=document.getElementById("num2").value;
+    var c=Number(a) /  Number(b);
+document.getElementById("hello").innerHTML =c;
+    }
+    </script>
+    
+</html>
+
